@@ -1,0 +1,12 @@
+#ifndef OWN_GAMEFS_GLOBAL_H
+#define OWN_GAMEFS_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(OWN_GAMEFS_LIBRARY)
+#  define OWN_GAMEFSSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define OWN_GAMEFSSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // OWN_GAMEFS_GLOBAL_H
